@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+header > div.linksh {
+    background-color: #602c8242;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+}
+
+header > div.linksh > h1 {
+    display: flex;
+    font-size: 1.5em;
+    padding: 1px 10px;
+}
+
+header > div.linksh > nav > ul {
+    display: flex;
+    padding: 1px 10px;
+    list-style-type: none;
+}
+header > div.linksh > nav > ul > li > a {
+    padding:  20px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    color: white;
+}
+
+
+header > div#texto > h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+    width: 100%;
+    padding: 100px 0;
+}
+
+div.campo {
+    display: flex;
+}
+
+div.campo > div.campo1 {
+    margin: 5% 5%;
+    background-color: rgba(143, 171, 196, 0.205);
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+div.campo > div.campo2 {
+    margin: 5% 5%;
+    background-color: rgba(143, 171, 196, 0.205);
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-size: cover;
+    background-position: center bottom;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+ 

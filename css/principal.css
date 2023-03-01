@@ -6,76 +6,202 @@
 }
 
 body, html {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
 }
 
-header > div.linksh {
-    background-color: #602c8242;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 50px;
-}
-
-header > div.linksh > h1 {
-    display: flex;
-    font-size: 1.5em;
-    padding: 1px 10px;
-}
-
-header > div.linksh > nav > ul {
-    display: flex;
-    padding: 1px 10px;
-    list-style-type: none;
-}
-header > div.linksh > nav > ul > li > a {
-    padding:  20px;
-    text-decoration: none;
-    color: white;
-}
-
 header {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 400px;
-    background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+div.hh1 {
+    margin: 20px 40px ;
+}
+
+div.hh1 > h1 {
+
+}
+
+div.hh1 > h2 {
+    font-size: small;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 30px 20px 0px 0px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+
+a.bt  {
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px 25px;    
+}
+
+a.bt:hover {
+    background-color: darkred;
     color: white;
+    transition: .5s;
 }
 
-
-header > div#texto > h1{
-    text-align: center;
-    font-weight: 400;
-    font-size: 4em;
-    width: 100%;
-    padding: 100px 0;
+main {
+    width: 99vw;
+    height: 100vh;
 }
 
-div.campo {
-    display: flex;
+section {
+    display: grid;
+    width: 99vw;
 }
 
-div.campo > div.campo1 {
-    margin: 5% 5%;
-    background-color: rgba(143, 171, 196, 0.205);
+article.img {
+    display: grid;
+    width: 99vw;
+    height: 692px;
     background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 40vw;
-    height: 40vh;
+}
+
+article.img > div {
+    margin: 610px auto;
+}
+
+article.img > div > a {
+    background-color: darkred;
+    padding: 15px 50px;
+    border: 0.1px solid rgb(116, 114, 114);
+    color: white;
+}
+
+article.img > div > a:hover {
+    background-color: rgba(127, 255, 212, 0);
+    color: red;
+}
+
+article.qd {
+    display: grid;
+    margin: 80px 300px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 20px;
+}
+
+article.qd > div {
+    border: 2px solid black;
+    text-align: center;
     border-radius: 10px;
 }
 
-div.campo > div.campo2 {
-    margin: 5% 5%;
-    background-color: rgba(143, 171, 196, 0.205);
-    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
-    background-size: cover;
-    background-position: center bottom;
-    width: 40vw;
-    height: 40vh;
+article.qd > div:hover {
+    border: 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.548);
+}
+
+article.qd > div > span {
+    margin-top: 80px;
+    font-size: 50px;
+    color: rgb(233, 111, 111);
+}
+
+hr {
+    margin: 10px auto;
+    width: 100px;
+    height: 5px;
+    background-color: red;
     border-radius: 10px;
 }
- 
+
+div.ot {
+    margin: 10px auto 70px;
+}
+
+div.ot > a {
+    background-color: darkred;
+    padding: 15px 70px;
+    border: 0.1px solid rgb(116, 114, 114);
+    border-radius: 7px;
+    color: white;
+}
+
+div.ot > a:hover {
+    background-color: rgba(0, 255, 255, 0);
+    color: rgb(216, 46, 46);
+}
+
+main > section article.sob {
+    display: grid;
+    height: 550px;
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+div.container {
+    display: inline-block;
+    width: 1000px;
+    margin: -40px auto;
+    border: 0;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+    background-color: rgb(58, 59, 66);
+}
+
+div.container > div.th {
+    float: left;
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+div.container > div.th > h1 {
+    font-size: 50px;
+    margin: 30px 10px 10px 30px;
+}
+
+div.container > div.th > p {
+    font-weight: 400;
+    line-height: 2em;
+    font-size: 14px;
+    
+}
+
+div.container > div.th > p.bt {
+    margin-bottom: 100px;
+}
+
+div.container > div.th > a {
+    margin-left: 30px;
+    background-color: darkred;
+    padding: 15px 50px;
+    border: 0.1px solid rgb(116, 114, 114);
+    border-radius: 7px;
+    color: white;
+}
+
+div.container > div.th > a:hover {
+    background-color: rgba(127, 255, 212, 0);
+    color: red; 
+}
+
+div.container > div.otimg {
+    height: 400px;
+    width: 400px;
+    margin: 60px 40px 10px;
+    background-image: url(../img/back-pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 10px;
+    float:  right;
+}

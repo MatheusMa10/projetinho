@@ -19,10 +19,6 @@ div.hh1 {
     margin: 20px 40px ;
 }
 
-div.hh1 > h1 {
-
-}
-
 div.hh1 > h2 {
     font-size: small;
 }
@@ -54,7 +50,6 @@ a.bt:hover {
 
 main {
     width: 99vw;
-    height: 100vh;
 }
 
 section {
@@ -138,7 +133,7 @@ div.ot > a:hover {
     color: rgb(216, 46, 46);
 }
 
-main > section article.sob {
+ section article.sob {
     display: grid;
     height: 550px;
     background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
@@ -204,4 +199,46 @@ div.container > div.otimg {
     background-size: cover; 
     border-radius: 10px;
     float:  right;
+}
+
+article.adv {
+    display: grid;
+    margin: 200px auto 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: minmax(500px, auto);
+}
+
+article.adv > div {
+    border: 2px solid red;
+}
+
+footer {
+    background-color: rgb(58, 59, 66);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+footer > div > h1 {
+    font-size: 60px;
+}
+
+footer > div > h3 {
+    color: white;
+}
+
+footer > div > p {
+    color: darkgray;
+}
+
+footer > div.ad > address {
+    color: darkgray;
+    width: 150px;
+}
+
+footer > div > p > a {
+    color: green;
+    font-size: 16px;
+    margin-left: -20px;
 }

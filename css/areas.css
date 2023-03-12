@@ -1,0 +1,185 @@
+/*Todas as demais mídias*/
+
+/* Typicak Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tsblet: 768px até 992px
+Desktop: 992px até 1200px
+Gramdes telas: acima de 1200px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+div.hh1 {
+    margin: 20px 40px ;
+}
+
+div.hh1 > h2 {
+    font-size: small;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 30px 20px 0px 0px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+
+a.bt  {
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px 25px;    
+}
+
+a.bt:hover {
+    background-color: rgb(25, 41, 82);
+    color: white;
+    transition: .5s;
+}
+
+main {
+    width: 99vw;
+}
+
+section {
+    display: grid;
+    width: 99vw;
+}
+
+article.img {
+    display: grid;
+    width: 99vw;
+    height: 500px;
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article.img > div {
+    margin: 300px auto;
+}
+
+article.img > div > h1 {
+    font-weight: 500;
+    font-size: 70px;
+    color: white;
+}
+
+article.peone {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+}
+
+article.peone > div.otesc {
+    float: right;
+    width: 60%;
+    margin-left: 10%;
+}
+
+article.peone > div.otesc > h1 {
+    margin: 40px 0px;
+    font-size: 40px;
+}
+
+article.peone > div.otesc > h2 {
+    font-size: 20px;
+}
+
+article.peone > div.otesc > p {
+    color: gray;
+    line-height: 1.5em;
+}
+
+article.peone > div.imgp {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/back-pc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article.are {
+    background-image: url(../img/background002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 500px;
+    color: white;
+}
+
+article.are > h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+article.are > div.container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: minmax(200px, auto);
+    gap: 20px;
+    text-align: justify;
+}
+
+article.are > div.container > div >h2 {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: rgb(58, 59, 66);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+footer > div > h1 {
+    font-size: 60px;
+}
+
+footer > div > h3 {
+    color: white;
+}
+
+footer > div > p {
+    color: darkgray;
+}
+
+footer > div.ad > address {
+    color: darkgray;
+    width: 150px;
+}
+
+footer > div > p > a {
+    color: green;
+    font-size: 16px;
+    margin-left: -20px;
+}

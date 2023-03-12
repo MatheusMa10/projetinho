@@ -13,6 +13,8 @@ body, html {
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: rgb(25, 41, 82);
+    color: white;
 }
 
 div.hh1 {
@@ -34,6 +36,7 @@ a {
     color: black;
     font-weight: 500;
     font-size: large;
+    color: white;
 }
 
 a.bt  {
@@ -43,7 +46,7 @@ a.bt  {
 }
 
 a.bt:hover {
-    background-color: darkred;
+    background-color: rgb(25, 41, 82);
     color: white;
     transition: .5s;
 }
@@ -72,7 +75,7 @@ article.img > div {
 }
 
 article.img > div > a {
-    background-color: darkred;
+    background-color: rgb(25, 41, 82);
     padding: 15px 50px;
     border: 0.1px solid rgb(116, 114, 114);
     color: white;
@@ -80,7 +83,7 @@ article.img > div > a {
 
 article.img > div > a:hover {
     background-color: rgba(127, 255, 212, 0);
-    color: red;
+    color: rgb(4, 27, 83);
 }
 
 article.qd {
@@ -105,14 +108,14 @@ article.qd > div:hover {
 article.qd > div > span {
     margin-top: 80px;
     font-size: 50px;
-    color: rgb(233, 111, 111);
+    color: rgb(100, 87, 175);
 }
 
 hr {
     margin: 10px auto;
     width: 100px;
     height: 5px;
-    background-color: red;
+    background-color: rgb(25, 41, 82);
     border-radius: 10px;
 }
 
@@ -121,7 +124,7 @@ div.ot {
 }
 
 div.ot > a {
-    background-color: darkred;
+    background-color: rgb(25, 41, 82);
     padding: 15px 70px;
     border: 0.1px solid rgb(116, 114, 114);
     border-radius: 7px;
@@ -130,7 +133,7 @@ div.ot > a {
 
 div.ot > a:hover {
     background-color: rgba(0, 255, 255, 0);
-    color: rgb(216, 46, 46);
+    color: rgb(4, 27, 83);
 }
 
  section article.sob {
@@ -177,7 +180,7 @@ div.container > div.th > p.bt {
 
 div.container > div.th > a {
     margin-left: 30px;
-    background-color: darkred;
+    background-color: rgb(25, 41, 82);
     padding: 15px 50px;
     border: 0.1px solid rgb(116, 114, 114);
     border-radius: 7px;
@@ -186,7 +189,7 @@ div.container > div.th > a {
 
 div.container > div.th > a:hover {
     background-color: rgba(127, 255, 212, 0);
-    color: red; 
+    color: rgb(4, 27, 83); 
 }
 
 div.container > div.otimg {
@@ -203,13 +206,51 @@ div.container > div.otimg {
 
 article.adv {
     display: grid;
-    margin: 200px auto 40px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    margin: 200px auto 100px;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     grid-auto-rows: minmax(500px, auto);
 }
 
 article.adv > div {
-    border: 2px solid red;
+    border: 2px solid rgb(25, 41, 82);
+    border-radius: 10px;
+    text-align: center;
+}
+
+article.adv > div > h1 {
+    font-size: 28px;
+}
+
+article.adv > div > h2{
+    font-size: 18px;
+    color: gray;
+}
+
+article.adv > div > p {
+    margin-top: 40px;
+}
+
+article.adv > div > p > a {
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+}
+
+article.adv > div > p > a:hover {
+    background-color: rgb(148, 218, 157);
+    color: green;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+}
+
+article.adv > div >div.ft {
+    margin: 40px auto;
+    border-radius: 10px;
+    background-image: url(../img/back-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
 }
 
 footer {

@@ -518,7 +518,7 @@ footer > div > p > a {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     header {
         display: inline-block;
         text-align: center;

@@ -1,3 +1,15 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +23,7 @@ body, html {
 }
 
 header {
+    width: 99vw;
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: rgb(25, 41, 82);
@@ -23,6 +36,10 @@ div.hh1 {
 
 div.hh1 > h2 {
     font-size: small;
+}
+
+div.hh1 > i#burguer {
+    display: none;
 }
 
 nav > ul > li {
@@ -39,20 +56,12 @@ a {
     color: white;
 }
 
-a.bt  {
-    border: 2px solid black;
-    border-radius: 7px;
-    padding: 10px 25px;    
-}
-
-a.bt:hover {
-    background-color: rgb(25, 41, 82);
-    color: white;
-    transition: .5s;
+a:hover {
+    color: rgb(107, 132, 196);
 }
 
 main {
-    width: 99vw;
+    width: 98vw;
 }
 
 section {
@@ -78,6 +87,7 @@ article.img > div > a {
     background-color: rgb(25, 41, 82);
     padding: 15px 50px;
     border: 0.1px solid rgb(116, 114, 114);
+    border-radius: 7px;
     color: white;
 }
 
@@ -88,8 +98,8 @@ article.img > div > a:hover {
 
 article.qd {
     display: grid;
-    margin: 80px 300px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    margin: 80px auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(300px, auto);
     gap: 20px;
 }
@@ -138,6 +148,7 @@ div.ot > a:hover {
 
  section article.sob {
     display: grid;
+    width: 99vw;
     height: 550px;
     background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
     background-repeat: no-repeat;
@@ -254,6 +265,7 @@ article.adv > div >div.ft {
 }
 
 footer {
+    width: 99vw;
     background-color: rgb(58, 59, 66);
     display: flex;
     flex-flow: row wrap;
@@ -282,4 +294,315 @@ footer > div > p > a {
     color: green;
     font-size: 16px;
     margin-left: -20px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    a {
+        font-size: medium;
+        padding: 10px;
+    }
+     
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section article.sob {
+        width: 98vw;
+    }
+
+    div.container {
+        width: 80vw;
+    }
+
+    div.container > div.th {
+        width: 40%;
+        float: left;
+    }
+
+    div.container > div.otimg {
+        width: 40%;
+        float: right;
+    }
+
+    footer {
+        width: 98.4vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section article.sob {
+        width: 98vw;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 60%;
+        height: 300px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 70px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr;
+    }
+
+    section article.sob {
+        width: 98vw;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 60%;
+        height: 300px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 70px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 60%;
+        height: 300px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 40px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
 }

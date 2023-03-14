@@ -123,3 +123,279 @@ footer > div > p > a {
     font-size: 16px;
     margin-left: -20px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section article.sob {
+        width: 99vw;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 60%;
+        height: 300px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 70px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr;
+    }
+
+    section article.sob {
+        width: 99vw;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 60%;
+        height: 300px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 70px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.qd {
+        display: grid;
+        margin: 80px auto;
+        grid-template-columns: 1fr;
+    }
+
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: 700px;
+    }
+
+    div.container > div.otimg {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 0px;
+
+    }
+
+    div.container > div.th {
+        text-align: justify;
+        line-height: 1em;
+        width: 90%;
+        margin: auto;
+    }
+
+    div.container > div.th > h1 {
+        font-size: 40px;
+        margin: 5px 10px 5px 30px;
+    }
+
+    div.container > div.th > p.bt {
+        margin-bottom: 50px;
+    }
+
+    div.container > div.th > a {
+        margin: 0px 0px 0px 10px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}

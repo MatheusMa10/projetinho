@@ -1,0 +1,958 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(25, 41, 82);
+    color: white;
+}
+
+div.hh1 {
+    margin: 10px 10px ;
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > div#img {
+    margin: 5px 10px ;
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > h2 {
+    font-size: small;
+}
+
+div.hh1 > i#burguer {
+    display: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 60px 50px 0px 0px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+}
+
+a:hover {
+    color: rgb(107, 132, 196);
+}
+
+main {
+    width: 99vw;
+}
+
+section {
+    display: grid;
+    width: 99vw;
+}
+
+article.img {
+    display: grid;
+    width: 99vw;
+    height: 500px;
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article.img > div {
+    margin: 300px auto;
+}
+
+article.img > div > h1 {
+    font-size: 70px;
+    color: white;
+}
+
+article.sob {
+    margin: auto;
+    width: 1200px;
+    height: 700px;
+}
+
+article.sob > div.escr {
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+}
+
+article.sob > div.escr > h1 {
+    margin: 0px 0px 20px 180px;
+    font-size: 40px;
+}
+
+article.sob > div.escr > p {
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: gray;
+    line-height: 1,5;
+    text-align: justify;
+}
+
+article.sob > div.magen {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/ft-lucas.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article.peone {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+}
+
+article.peone > div.otesc {
+    float: left;
+    width: 60%;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+article.peone > div.otesc > h1 {
+    margin: 40px 0px 20px;
+    font-size: 40px;
+}
+
+article.peone > div.otesc > div {
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+article.peone > div.otesc > div > span {
+    font-size: 40px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+    margin-top: -60px;
+    padding: 20px;
+    border-radius: 50%;
+    color: rgb(201, 209, 221);
+    background-color: rgb(131, 171, 189);
+}
+
+article.peone > div.otesc > div > span:hover {
+    cursor: default;
+}
+
+article.peone > div.otesc > div > h2 {
+    font-size: 24px;
+}
+
+article.peone > div.otesc > div > p {
+    color: gray;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+article.peone > div.imgp {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    float: right;
+    background-image: url(../img/ft-lucas2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+footer {
+    width: 99vw;
+    background-color: rgb(25, 41, 82);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+footer > div#log {
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 190px;
+}
+
+footer > div#log > h1 {
+    font-size: 60px;
+}
+
+footer > div.ad > h3 {
+    color: white;
+    margin-top: 50px;
+}
+
+footer > div.ad > p {
+    color: darkgray;
+}
+
+footer > div > h3 {
+    color: white;
+}
+
+footer > div > p {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+footer > div > p > a {
+    color: green;
+    font-size: 16px;
+    margin-left: -20px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    a {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 90vw;
+        height: 800px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    article.sob > div.escr {
+        margin-top: 50px;
+        width: 60%;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 20px 10px;
+    }
+
+    article.sob > div.escr > p {
+        margin-bottom: 20px;
+    }
+
+    article.sob > div.magen {
+        width: 40%;
+        background-size: cover;
+    }
+
+    article.peone {
+        width: 90vw;
+        height: 750px;
+        margin: auto;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        float: left;
+        width: 60%;
+        margin-left: 5%;
+    }
+    
+    article.peone > div.otesc > h1 {
+        margin: 40px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 20px;
+    }
+    
+    article.peone > div.otesc > p {
+        color: gray;
+        line-height: 1.5em;
+    }
+    
+    article.peone > div.imgp {
+        padding: 5px;
+        width: 30%;
+    }    
+    footer {
+        width: 99vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 80vw;
+        height: 900px;
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    article.sob > div.escr {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 10px 10px;
+    }
+
+    article.sob > div.escr > p {
+        margin-top: 20px;
+    }
+
+    article.sob > div.magen {
+        display: block;
+        width: 40%;
+        height: 200px;
+        margin-left: 30%;
+       background-image: url(../img/ft-lucas.jpg);
+    }
+
+    article.peone {
+        width: 80vw;
+        height: 770px;
+        margin: auto;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        width: 90%;
+        text-align: center;
+    }
+    
+    article.peone > div.otesc > h1 {
+        text-align: left;
+        margin: 40px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 24px;
+    }
+    
+    article.peone > div.otesc > div > p {
+        color: gray;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    article.peone > div.imgp {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    } 
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 85vw;
+        background-color: white;
+        padding: 10px;
+        height: 930px;
+        text-align: center;
+    }
+
+    article.sob > div.escr {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 10px 10px;
+    }
+
+    article.sob > div.escr > p {
+        margin-bottom: 5px;
+    }
+
+    article.sob > div.magen {
+        display: block;
+        width: 50%;
+        height: 200px;
+        margin-left: 25%;
+        background-image: url(../img/ft-lucas.jpg);
+    }
+
+    article.peone {
+        width: 85vw;
+        height: 770px;
+        margin: 10px auto;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        width: 90%;
+        text-align: center;
+    }
+    
+    article.peone > div.otesc > h1 {
+        text-align: left;
+        margin: 30px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 24px;
+    }
+    
+    article.peone > div.otesc > div > p {
+        color: gray;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    article.peone > div.imgp {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    } 
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 99vw;
+        height: 930px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    article.sob > div.escr {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 10px 10px;
+    }
+
+    article.sob > div.escr > p {
+        margin-bottom: 0px;
+    }
+
+    article.sob > div.magen {
+        display: block;
+        width: 60%;
+        height: 200px;
+        margin-left: 20%;
+        background-image: url(../img/ft-lucas.jpg);
+    }
+
+    article.peone {
+        width: 99vw;
+        height: 800px;
+        margin: 10px auto;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        width: 90%;
+        text-align: center;
+    }
+    
+    article.peone > div.otesc > h1 {
+        text-align: left;
+        margin: 30px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 24px;
+    }
+    
+    article.peone > div.otesc > p {
+        color: gray;
+        line-height: 1.5em;
+    }
+    
+    article.peone > div.imgp {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    } 
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 99vw;
+        height: 1150px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    article.sob > div.escr {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 10px 10px;
+    }
+
+    article.sob > div.escr > p {
+        margin-bottom: 20px;
+    }
+
+    article.sob > div.magen {
+        display: none;
+    }
+
+    article.peone {
+        width: 100vw;
+        height: 1150px;
+        margin: 10px auto 0px;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        width: 90%;
+        text-align: center;
+    }
+    
+    article.peone > div.otesc > h1 {
+        text-align: left;
+        margin: 30px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 24px;
+    }
+    
+    article.peone > div.otesc > p {
+        color: gray;
+        line-height: 1.5em;
+    }
+    
+    article.peone > div.imgp {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h1 {
+        font-size: 50px;
+    }
+
+    footer > div > h2 {
+        font-size: 20px;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    section {
+        background-color: rgba(223, 238, 235, 0.63);
+        margin: auto;
+    }
+
+    article.sob {
+        width: 99vw;
+        height: 1160px;
+        background-color: white;
+        padding: 2px;
+    }
+
+    article.sob > div.escr {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    article.sob > div.escr > h1 {
+        margin: 0 0 10px 10px;
+        font-size: 30px;
+    }
+
+    article.sob > div.escr > p {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    article.sob > div.magen {
+        display: none;
+    }
+
+    article.peone {
+        width: 99vw;
+        height: 1460px;
+        margin: 10px auto 0px;
+        background-color: white;
+    }
+    
+    article.peone > div.otesc {
+        width: 90%;
+        text-align: center;
+    }
+    
+    article.peone > div.otesc > h1 {
+        text-align: left;
+        margin: 30px 0px;
+        font-size: 40px;
+    }
+    
+    article.peone > div.otesc > h2 {
+        font-size: 24px;
+    }
+    
+    article.peone > div.otesc > p {
+        color: gray;
+        line-height: 1.5em;
+    }
+    
+    article.peone > div.imgp {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h1 {
+        font-size: 40px;
+    }
+
+    footer > div > h2 {
+        font-size: 15px;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}

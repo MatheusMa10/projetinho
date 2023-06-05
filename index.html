@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="shortcut icon" href="./img/icon-mendes.jpg" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="hh1">
+            <div id="img"></div>
+            <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+        </div>
+        <nav id="itens">
+            <ul>
+                <li id="ho"><a href="./index.html">Home</a></li>
+                <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                <li><a href="./areas.html">Áreas de Atuação</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="img">
+                <div><a href="./contato.html" class="bt">Contato</a></div>
+            </article>
+
+            <article class="qd">
+                <div>
+                    <span class="material-symbols-outlined">balance</span>
+                    <h1>Direito e Processo Tributário</h1><hr>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">book</span>
+                    <h1>Direito e Processo do Trabalho</h1><hr>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">gavel</span>
+                    <h1>Direito e Processo Civil</h1><hr>
+                </div>
+            </article>
+
+            <div class="ot">
+                <a href="./areas.html">Saiba mais</a>
+            </div>
+
+            <article class="sob">
+                <div class="container">
+                    <div class="otimg">
+                        <!--colocar uma imagem-->
+                    </div>
+
+                    <div class="th">
+                        <h1>Sobre nós</h1>
+                        <p>Nós somos um escritório de advocacia especializado em fornecer serviços jurídicos aos nossos clientes.</p>
+                        <p class="bt">Oferecemos soluções legais personalizadas e humanizadas para atender às necessidades específicas de cada cliente.</p>
+
+                        <a href="./sobrenos.html">Saiba mais</a>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article class="adv">
+                <div>
+                    <div class="ft">
+
+                    </div>
+                    <h1>Lucas Mendes</h1><hr>
+                    <h2>Advogado</h2>
+                    <p><a href="https://contate.me/lucasmendesadv" target="_blank">WhatsApp: (11) 97737-7361</a></p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="ad">
+            <h3>ENDEREÇO</h3>
+            <p>Escritório Digital</p>
+        </div>
+
+        <div id="log">
+        </div>
+
+        <div>
+            <h3>HORÁRIOS</h3>
+            <p>Seg-Sex: 09:00 - 18:00</p>
+            <h3>TELEFONE</h3>
+            <p><a href="https://contate.me/lucasmendesadv" target="_blank">WhatsApp: (11) 97737-7361</a></p>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

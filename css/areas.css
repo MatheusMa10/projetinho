@@ -1,0 +1,736 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(25, 41, 82);
+    color: white;
+}
+
+div.hh1 {
+    margin: 10px 10px ;
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > div#img {
+    margin: 5px 10px ;
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > h2 {
+    font-size: small;
+}
+
+div.hh1 > i#burguer {
+    display: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 60px 50px 0px 0px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+}
+
+a:hover {
+    color: rgb(107, 132, 196);
+}
+
+main {
+    width: 99vw;
+}
+
+section {
+    display: grid;
+    width: 99vw;
+}
+
+article.img {
+    display: grid;
+    width: 99vw;
+    height: 500px;
+    background-image: url(../img/pexels-david-underland-3523621\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article.img > div {
+    margin: 300px auto;
+}
+
+article.img > div > h1 {
+    font-weight: 500;
+    font-size: 70px;
+    color: white;
+}
+
+article.peone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 1200px;
+    margin: 100px auto;
+}    
+
+article.peone > div.otesc > ul > li {
+    margin-bottom: 20px;
+}
+
+article.peone > div.imgp {
+    width: 500px;
+    height: 300px;
+    background-image: url(../img/icon-mendes2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article.are {
+    background-image: url(../img/background002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 500px;
+    color: white;
+}
+
+article.are > h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+article.are > div.container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+    text-align: justify;
+}
+
+article.are > div.container > div {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+article.are > div.container > div > span {
+    margin-top: -40px;
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+article.are > div.container > div > span:hover {
+    font-size: 80px;
+    transition: .5s;
+    cursor: default;
+}
+
+article.are > div.container > div > h2 {
+    margin-top: 30px;
+}
+
+footer {
+    width: 99vw;
+    background-color: rgb(25, 41, 82);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+footer > div#log {
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 190px;
+}
+
+footer > div#log > h1 {
+    font-size: 60px;
+}
+
+footer > div.ad > h3 {
+    color: white;
+    margin-top: 50px;
+}
+
+footer > div.ad > p {
+    color: darkgray;
+}
+
+footer > div > h3 {
+    color: white;
+}
+
+footer > div > p {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+footer > div > p > a {
+    color: green;
+    font-size: 16px;
+    margin-left: -20px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    article.peone {
+        width: 80vw;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+    }
+
+    footer {
+        width: 99vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    a {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    article.peone {
+        width: 80vw;
+    }
+    
+    article.are {
+        height: 600px;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+        margin: auto;
+    }
+    
+    footer {
+        width: 99vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    } 
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.peone {
+        width: 80vw;
+    }
+    
+    article.peone > div.imgp {
+        width: 400px;
+        height: 250px;
+    }
+    
+    article.are {
+        height: 600px;
+    }
+    
+    article.are > div.container {
+        width: 90vw;
+        margin: auto;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    } 
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.peone {
+        width: 90vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    article.peone > div.imgp {
+        width: 350px;
+        height: 250px;
+    }
+    
+    article.are {
+        height: 830px;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+        margin: auto;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.img > div {
+        margin: 250px auto;
+    }
+    
+    article.img > div > h1 {
+        font-weight: 500;
+        font-size: 55px;
+        color: white;
+    }
+
+    article.peone {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90vw;
+    }
+
+    article.peone > div.otesc {
+        margin: auto;
+    }
+
+    article.peone > div.otesc > ul {
+        text-align: justify;
+    }
+
+    article.peone > div.imgp {
+        width: 400px;
+        height: 250px;
+        margin: auto;
+    }
+    
+    article.are {
+        height: 800px;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+        margin: auto;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.img > div {
+        margin: 250px auto;
+    }
+    
+    article.img > div > h1 {
+        font-weight: 500;
+        font-size: 40px;
+        color: white;
+    }
+
+    article.peone {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90vw;
+    }
+
+    article.peone > div.otesc {
+        margin: auto;
+    }
+
+    article.peone > div.otesc > ul {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    article.peone > div.imgp {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+    
+    article.are {
+        height: 900px;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+        margin: auto;
+    }
+
+    article.are > div.container > div {
+        width: 270px;
+    }
+
+    footer > div.ad > address {
+        display: none;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h1 {
+        font-size: 50px;
+    }
+
+    footer > div > h2 {
+        font-size: 20px;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.img > div {
+        margin: 250px auto;
+    }
+    
+    article.img > div > h1 {
+        font-weight: 500;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    article.peone {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90vw;
+    }
+
+    article.peone > div.otesc {
+        margin: auto;
+    }
+
+    article.peone > div.otesc > ul {
+        text-align: justify;
+        font-size: 11px;
+    }
+
+    article.peone > div.imgp {
+        width: 200px;
+        height: 250px;
+        margin: auto;
+    }
+    
+    article.are {
+        height: 900px;
+    }
+    
+    article.are > div.container {
+        width: 80vw;
+        margin: auto;
+    }
+
+    article.are > div.container > div {
+        width: 200px;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h1 {
+        font-size: 40px;
+    }
+
+    footer > div > h2 {
+        font-size: 15px;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}

@@ -1,0 +1,1170 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(25, 41, 82);
+    color: white;
+}
+
+div.hh1 {
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > div#img {
+    margin: 5px 10px ;
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 300px;
+}
+
+div.hh1 > h2 {
+    font-size: small;
+}
+
+div.hh1 > i#burguer {
+    display: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 60px 50px 0px 0px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+}
+
+a:hover {
+    color: rgb(107, 132, 196);
+}
+
+article.hd {
+    background-image: url(../img/carro-fundo.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+article.hd > div {
+    padding: 200px 0;
+    margin-left: 20%;
+    max-width: 500px;
+}
+
+article.hd > div > h1 {
+    font-size: 30px;
+    padding: 50px 0 10px;
+    font-weight: 700;
+}
+
+article.hd > div > p {
+    font-weight: 700;
+    padding: 10px 0 50px;
+}
+
+article.hd > div > a {
+    background-color: rgba(10, 230, 65, 0.767);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 50px;
+} 
+
+article.hd > div > a:hover {
+    color: white;
+    font-size: 16px;
+    padding: 11px 51px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.534);
+    transition: .4s;
+}
+
+article.sob {
+    text-align: justify;
+    width: 99vw;
+    padding: 100px;
+}
+
+article.sob > div.text {
+    font-size: 20px;
+    padding: 30px;
+}
+
+article.sob > div.text > h1 {
+    color: rgb(64, 64, 64);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+hr {
+    width: 50px;
+    height: 2.5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+article.sob > div.text > p {
+    margin: 50px 0 150px;
+    line-height: 2;
+    color: gray;
+}
+
+article.sob > div.text > a {
+    background-color: rgba(10, 230, 65, 0.767);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
+}
+
+article.sob > div.text > a:hover {
+    background-color: rgba(25, 201, 69, 0.767);
+    padding: 10px 25px;
+    border: 1px solid white;
+    transition: .8s;
+}
+
+article.sob > div.qsimg > img {
+    width: 500px;
+    height: 550px;
+}
+
+article.ap {
+    padding: 50px 0 80px;
+    background-color: rgba(235, 235, 235, 0.61);
+}
+
+article.ap > h1 {
+    color: rgb(64, 64, 64);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0 0 80px;
+}
+
+article.ap > div.ap {
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+article.ap > div.ap > div {
+    width: 300px;
+    margin-bottom: 200px;
+}
+
+article.ap > div.ap > div > h2 {
+    font-size: 18px;
+}
+
+article.ap > div.aap {
+    margin: auto;
+    width: 300px;
+}
+
+article.ap > div.aap > a {
+    background-color: rgba(10, 230, 65, 0.767);
+    color: white;
+    padding: 5px 30px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
+}
+
+article.ap > div.aap > a:hover {
+    background-color: rgba(25, 201, 69, 0.767);
+    padding: 10px 25px;
+    border: 1px solid white;
+    transition: .8s;
+}
+
+article.pf {
+    padding: 80px 0;
+}
+
+article.pf > h1 {
+    color: rgb(64, 64, 64);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+article.pf > hr {
+    margin: 50px auto;
+    width: 80px;
+}
+
+article.pf > p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+article.pf > div.h2 > h2 {
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.082);
+    padding: 15px;
+    margin: 0 auto 10px;
+    max-width: 80%;
+    border-radius: 5px 5px 0 0;
+}
+
+article.pf > div.h2 > h2:hover {
+    cursor: pointer;
+    padding: 18px;
+    transition: .5s;
+    background-color: rgba(41, 40, 40, 0.123);
+}
+
+article.pf > div.h2 > p {
+    display: none;
+    background-color: rgba(128, 128, 128, 0.041);
+    color: gray;
+    padding: 15px;
+    margin: -10px auto 10px;
+    max-width: 80%;
+    border-radius: 0 0 5px 5px;
+}
+
+article.prazo {
+    text-align: justify;
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+article.prazo > div {
+    max-width: 1100px;
+    margin: auto;
+}
+
+article.prazo > div > h1 {
+     font-weight: 800;
+     font-size: 40px;
+}
+
+article.prazo > div > p {
+    margin-bottom: 100px;
+}
+
+article.prazo > div > a {
+    color: white;
+    background-color: rgba(10, 230, 65, 0.767);
+    padding: 5px 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.637);
+}
+
+article.prazo > div > a:hover {
+    background-color: rgba(25, 201, 69, 0.767);
+    padding: 10px 25px;
+    border: 1px solid white;
+    transition: .8s;
+}
+
+article.os {
+    padding: 50px;
+    background-color: rgba(235, 235, 235, 0.404);
+}
+
+article.os > h1 {
+    color: rgb(64, 64, 64);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+article.os > hr {
+    margin: 50px auto;
+    width: 80px;
+}
+
+article.os > p {
+    margin: 50px 0;
+    text-align: center;
+    color: gray;
+}
+
+article.os > div.os {
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+article.os > div.os > div {
+    margin-bottom: 100px;
+    width: 300px;
+}
+
+article.os > div.os > div > p {
+    color: gray;
+}
+
+article.os > div.a {
+    max-width: 300px;
+    margin: 0 auto ;
+}
+
+article.os > div.a > a {
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    background-color: rgba(25, 212, 72, 0.767);
+    border-radius: 4px;
+}
+
+article.os > div.a > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(27, 192, 68, 0.849);
+    padding: 10px 25px;
+    border: 1px solid white;
+    transition: .8s;
+}
+
+article.siga {
+    padding: 50px 0;
+    text-align: center;
+}
+
+article.siga > h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(64, 64, 64);
+}
+
+article.siga > hr {
+    width: 80px;
+    margin: 50px auto;
+
+}
+
+footer {
+    background-color: rgb(25, 41, 82);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 60px 0px;
+}
+
+footer > div#log {
+    background-image: url(../img/logo-mendes2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 190px;
+}
+
+footer > div#log > h1 {
+    font-size: 60px;
+}
+
+footer > div.ad > h3 {
+    color: white;
+    margin-top: 50px;
+}
+
+footer > div.ad > p {
+    color: darkgray;
+}
+
+footer > div > h3 {
+    color: white;
+}
+
+footer > div > p {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+footer > div > p > a {
+    color: green;
+    font-size: 16px;
+    margin-left: -20px;
+}
+
+@media screen and (min-width: 1213px) {
+    article.sob > div.text {
+        float: left;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1212px) {
+    a {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    article.sob > div.text {
+        width: 80vw;
+        margin: auto;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 18%;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 10%;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    article.ap > div.ap > div {
+        margin-bottom: 10px;
+    }
+    
+    article.ap > div.aap {
+        margin: 100px auto 0;
+    }
+    
+    article.os > div.os {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        width: 99vw;
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.sob > div.text {
+        width: 80vw;
+        margin: auto;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 8%;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 10%;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    article.ap > div.ap > div {
+        margin-bottom: 10px;
+    }
+    
+    article.ap > div.aap {
+        margin: 100px auto 0;
+    }
+    
+    article.os > div.os {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 99vw;
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.hd > div {
+        padding: 100px 0;
+        margin-left: 10%;
+    }
+
+    article.sob {
+        padding: 20px 0 50px 50px;
+    }
+
+    article.sob > div.text {
+        width: 80vw;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 8%;
+    }
+
+    article.sob > div.qsimg > img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 20%;
+        grid-template-columns: 1fr;
+    }
+    
+    article.ap > div.ap > div {
+        margin-bottom: 10px;
+    }
+    
+    article.ap > div.aap {
+        margin: 100px auto 0;
+    }
+
+    article.prazo > div > h1 {
+        font-size: 30px;
+    }
+
+    article.os > div.a {
+        margin: 50px 25% 0;
+    }
+    
+    article.os > div.os {
+        margin-left: 20%;
+        grid-template-columns: 1fr;
+    }
+
+    article.os > div.os > div {
+        margin-bottom: 50px;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 99vw;
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.hd > div {
+        padding: 100px 0;
+        margin-left: 10%;
+    }
+
+    article.sob {
+        padding: 20px 0 50px 50px;
+    }
+
+    article.sob > div.text {
+        width: 80vw;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 8%;
+    }
+
+    article.sob > div.qsimg > img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 20%;
+        grid-template-columns: 1fr;
+    }
+    
+    article.ap > div.ap > div {
+        margin-bottom: 10px;
+    }
+    
+    article.ap > div.aap {
+        margin: 100px auto 0;
+    }
+
+    article.prazo > div > h1 {
+        font-size: 30px;
+    }
+
+    article.os > div.a {
+        margin: 50px 25% 0;
+    }
+    
+    article.os > div.os {
+        margin-left: 20%;
+        grid-template-columns: 1fr;
+    }
+
+    article.os > div.os > div {
+        margin-bottom: 50px;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 99vw;
+        display: inline-block;
+        text-align: center;
+        width: 100vw;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 0px 2px 0px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.hd > div {
+        padding: 100px 0;
+        margin-left: 10%;
+    }
+
+    article.hd > div > h1 {
+        font-size: 25px;
+    }
+    
+    article.hd > div > p {
+        font-size: 14px;
+    }
+    
+    article.hd > div > a {
+        font-size: 14px;
+        padding: 10px 30px;
+    } 
+    
+    article.hd > div > a:hover {
+        font-size: 15px;
+        padding: 11px 31px;
+    }
+
+    article.sob {
+        padding: 20px 0 50px 10px;
+    }
+
+    article.sob > div.text {
+        width: 95vw;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 8%;
+    }
+
+    article.sob > div.qsimg > img {
+        width: 250px;
+        height: 300px;
+    }
+
+    article.ap > h1 {
+        font-size: 35px;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 10%;
+        grid-template-columns: 1fr;
+    }
+    
+    article.ap > div.ap > div {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    
+    article.ap > div.aap {
+        width: 250px;
+        margin: 100px 50px 0;
+    }
+
+    article.pf > h1 {
+        font-size: 40px;
+    }
+
+    article.prazo {
+        padding: 35px;
+    }
+    
+    article.prazo > div > h1 {
+         font-size: 25px;
+    }
+    
+    article.prazo > div > p {
+        font-size: 14px;
+    }
+    
+    article.prazo > div > a {
+        padding: 5px 15px;
+    }
+    
+    article.prazo > div > a:hover {
+        padding: 10px 20px;
+    }
+
+    article.os > div.a {
+        margin: 50px 10% 0;
+    }
+    
+    article.os > div.os {
+        margin-left: 1px;
+        grid-template-columns: 1fr;
+    }
+
+    article.os > div.os > div {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    article.siga > h1 {
+        font-size: 40px;
+    }
+
+    footer > div > p > a {
+        width: 100vw;
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    header {
+        width: 99vw;
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.hh1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > div#img {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.hh1 > i#burguer {
+        display: block;
+        padding: 5px;
+        font-size: 30px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    div.hh1 > i#burguer:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin: 0px 20px 2px 30px;
+        padding: 20px;
+        background-color: rgb(29, 47, 94);
+    }
+
+    nav > ul > li#ho {
+        margin-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+    a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    article.hd > div {
+        padding: 100px 0;
+        margin-left: 2%;
+    }
+
+    article.hd > div > h1 {
+        font-size: 23px;
+    }
+    
+    article.hd > div > p {
+        font-size: 14px;
+    }
+    
+    article.hd > div > a {
+        font-size: 14px;
+        padding: 10px 15px;
+    } 
+    
+    article.hd > div > a:hover {
+        font-size: 15px;
+        padding: 11px 31px;
+    }
+
+    article.sob {
+        padding: 20px 0 50px 5px;
+    }
+
+    article.sob > div.text {
+        width: 95vw;
+    }
+
+    article.sob > div.text > p {
+        font-size: 14px;
+    }
+
+    article.sob > div.text > a {
+        padding: 5px 10px;
+    }
+    
+    article.sob > div.text > a:hover {
+        padding: 10px 15px;
+    }
+    
+    article.sob > div.qsimg {
+        margin: 20px 0 0 2%;
+    }
+
+    article.sob > div.qsimg > img {
+        width: 210px;
+        height: 250px;
+    }
+
+    article.ap > h1 {
+        font-size: 27px;
+    }
+    
+    article.ap > div.ap {
+        margin-left: 2%;
+        grid-template-columns: 1fr;
+    }
+    
+    article.ap > div.ap > div {
+        margin-bottom: 10px;
+        width: 220px;
+    }
+
+    article.ap > div.ap > div > h2 {
+        font-size: 14px;
+    }
+    
+    article.ap > div.aap {
+        width: 220px;
+        margin: 100px 15px 0;
+    }
+
+    article.pf > h1 {
+        font-size: 30px;
+    }
+
+    article.pf > p {
+        font-size: 15px;
+    }
+
+    article.pf > div.h2 > h2 {
+        font-size: 15px;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    article.pf > div.h2 > p {
+        font-size: 14px;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    article.prazo {
+        padding: 35px;
+    }
+    
+    article.prazo > div > h1 {
+         font-size: 25px;
+         margin-bottom: 20px;
+    }
+    
+    article.prazo > div > p {
+        font-size: 14px;
+    }
+    
+    article.prazo > div > a {
+        padding: 5px 15px;
+    }
+    
+    article.prazo > div > a:hover {
+        padding: 10px 20px;
+    }
+
+    article.os {
+        padding: 20px;
+    }
+    
+    article.os > h1 {
+        font-size: 35px;
+    }
+
+    article.os > p {
+        font-size: 14px;
+    }
+
+    article.os > div.os > div {
+        width: 220px;
+    }
+
+    article.os > div.os > div > h2 {
+        font-size: 16px;
+    }
+    
+    article.os > div.os > div > p {
+        font-size: 14px;
+    }
+
+    article.os > div.a {
+        margin: 50px 1px 0;
+    }
+    
+    article.os > div.os {
+        margin-left: 1px;
+        grid-template-columns: 1fr;
+    }
+
+    article.os > div.os > div {
+        width: 210px;
+        margin-bottom: 50px;
+    }
+
+    article.siga > h1 {
+        font-size: 30px;
+    }
+
+    footer > div > p > a {
+        display: none;
+    }
+
+    footer > div > h3 {
+        display: none;
+    }
+
+    footer > div > h1 {
+        font-size: 40px;
+    }
+
+    footer > div > h2 {
+        font-size: 15px;
+    }
+
+    footer > div > p {
+        display: none;
+    } 
+}

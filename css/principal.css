@@ -771,6 +771,7 @@ footer > div > p > a {
 
 @media screen and (min-width: 240px) and (max-width: 320px) {
     header {
+        width: 99vw;
         display: inline-block;
         text-align: center;
     }
@@ -781,6 +782,7 @@ footer > div > p > a {
     }
 
     div.hh1 > div#img {
+        width: 100%;
         margin: auto;
     }
 
@@ -798,7 +800,7 @@ footer > div > p > a {
 
     nav > ul > li {
         display: block;
-        margin: 0px 20px 2px 30px;
+        margin: 0px 0px 2px 0px;
         padding: 20px;
         background-color: rgb(29, 47, 94);
     }
